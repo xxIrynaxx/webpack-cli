@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:scripts": "webpack -p",
-    "watch:scripts": "webpack -d --watch --devtool eval-source-maps"
+    "build:scripts": "SET NODE_OPTIONS=--openssl-legacy-provider && webpack -p",
+    "watch:scripts": "SET NODE_OPTIONS=--openssl-legacy-provider && webpack -d --watch --devtool eval-source-maps"
   },
   "keywords": [],
   "author": "",
